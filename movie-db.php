@@ -33,6 +33,6 @@ function mdb_create_post_type() {
         'has_archive'   => true
     );
 
-    register_post_type('movies', $args);
+    register_post_type('movie', $args);
 }
 add_action('init', 'mdb_create_post_type', 0);
