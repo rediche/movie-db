@@ -6,15 +6,15 @@
  */
 function mdb_build_meta_box( $post ) {
     // Including nonce field for security reasons
-    wp_nonce_field( basename( __FILE__ ), 'movie_meta_box_nonce' );
+    wp_nonce_field( 'save-movie-info-meta-box.php', 'movie_meta_box_nonce' );
 
     // Retrieve the current values
     $current_original_title = get_post_meta( $post->ID, '_movie_original_title', true );
     $current_title          = get_post_meta( $post->ID, '_movie_title', true );
     $current_country        = get_post_meta( $post->ID, '_movie_country', true );
-    $current_year           = get_post_meta( $post->ID, '_movie_year', true);
-    $current_duration       = get_post_meta( $post->ID, '_movie_duration', true);
-    $current_director       = get_post_meta( $post->ID, '_movie_director', true);
+    $current_year           = get_post_meta( $post->ID, '_movie_year', true );
+    $current_duration       = get_post_meta( $post->ID, '_movie_duration', true );
+    $current_director       = get_post_meta( $post->ID, '_movie_director', true );
     ?>
     <div class="mdb-flex">
         <div class="mdb-inside">
@@ -45,7 +45,6 @@ function mdb_build_meta_box( $post ) {
                     } 
                     ?>
                 </select>
-                <!--<input type="text" name="year" value="<?php echo $current_year; ?>" />-->
             </label>
         </div>
         <div class="mdb-inside">

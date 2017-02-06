@@ -1,5 +1,6 @@
 <?php
 require_once('build-movie-info-meta-box.php');
+require_once('save-movie-info-meta-box.php');
 
 /**
  * Add custom meta box to Movie post type

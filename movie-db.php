@@ -15,6 +15,7 @@ require_once('inc/create-movie-post-type.php');
 // Add meta box: Movie Info
 require_once('inc/add-movie-info-meta-box.php');
 
+// Load css/admin-style.css
 function mdb_movie_enqueue_style($hook) {
     if ( 'post.php' != $hook ) {
         return;
