@@ -22,7 +22,8 @@ function mdb_create_post_type() {
         'hierarchical'  => false,
         'public'        => true,
         'menu_position' => 5,
-        'has_archive'   => true
+        'has_archive'   => true,
+        'menu_icon'     => 'dashicons-video-alt'
     );
 
     register_post_type( 'movie', $args );
