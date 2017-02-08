@@ -10,10 +10,13 @@ Text Domain: mdb
 */
 
 // Create custom post type: movie
-require_once('inc/create-movie-post-type.php');
+require_once('inc/post-types/create-movie-post-type.php');
 
 // Add meta box: Movie Info
-require_once('inc/add-movie-info-meta-box.php');
+require_once('inc/meta-boxes/add-movie-info-meta-box.php');
+
+// Add Taxonomy: Countries
+require_once('inc/taxonomies/create-country-taxonomy.php');
 
 // Load css/admin-style.css
 function mdb_movie_enqueue_style($hook) {
