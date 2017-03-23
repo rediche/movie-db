@@ -15,8 +15,17 @@ require_once('inc/post-types/create-movie-post-type.php');
 // Add meta box: Movie Info
 require_once('inc/meta-boxes/add-movie-info-meta-box.php');
 
-// Add Taxonomy: Countries
-require_once('inc/taxonomies/create-country-taxonomy.php');
+// Add meta box: Mood Info
+require_once('inc/meta-boxes/add-mood-info-meta-box.php');
+
+// Add Taxonomy: Series (Tag)
+require_once('inc/taxonomies/create-series-taxonomy.php');
+
+// Add Taxonomy: Theme (Tag)
+require_once('inc/taxonomies/create-theme-taxonomy.php');
+
+// Add Taxonomy: Festival (Category)
+require_once('inc/taxonomies/create-festival-taxonomy.php');
 
 // Load css/admin-style.css
 function mdb_movie_enqueue_style($hook) {

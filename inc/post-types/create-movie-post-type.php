@@ -23,7 +23,8 @@ function mdb_create_post_type() {
         'public'        => true,
         'menu_position' => 5,
         'has_archive'   => true,
-        'menu_icon'     => 'dashicons-video-alt'
+        'menu_icon'     => 'dashicons-video-alt',
+        'supports'      => array( 'title', 'editor', 'thumbnail' )
     );
 
     register_post_type( 'movie', $args );

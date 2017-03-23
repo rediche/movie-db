@@ -5,6 +5,14 @@
     padding-top: 6px;
 }
 
+.mdb-flex.column {
+    flex-direction: column;
+}
+
+.mdb-flex.column .mdb-inside {
+    flex-basis: 100%;
+}
+
 .mdb-inside {
     margin-bottom: 12px;
     flex-basis: 32%;
