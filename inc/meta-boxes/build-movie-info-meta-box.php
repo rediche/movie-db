@@ -26,6 +26,7 @@ function mdb_build_meta_box( $post ) {
     $current_version        = get_post_meta( $post->ID, '_movie_version', true );
     $current_subtitles      = get_post_meta( $post->ID, '_movie_subtitles', true );
     $current_subtitlelang   = get_post_meta( $post->ID, '_movie_subtitlelang', true );
+    $current_trailer        = get_post_meta( $post->ID, '_movie_trailer', true );
     ?>
     <div class="mdb-flex">
         <div class="mdb-inside">
@@ -137,6 +138,12 @@ function mdb_build_meta_box( $post ) {
             <label>
                 <p><?php _e( 'Subtitle Language', 'mdb' ); ?></p>
                 <input type="text" name="subtitlelang" value="<?php echo $current_subtitlelang; ?>" />
+            </label>
+        </div>
+        <div class="mdb-inside">
+            <label>
+                <p><?php _e( 'Trailer', 'mdb' ); ?></p>
+                <input type="text" name="trailer" placeholder="<?php _e( 'YouTube ID', 'mdb' ); ?>" value="<?php echo $current_trailer; ?>" />
             </label>
         </div>
     </div>

@@ -106,5 +106,10 @@ function mdb_save_meta_boxes( $post_id ) {
         update_post_meta( $post_id, '_movie_subtitlelang', sanitize_text_field( $_POST['subtitlelang'] ) );
     }
 
+    // @string Trailer
+    if( isset( $_REQUEST['trailer'] ) ) {
+        update_post_meta( $post_id, '_movie_trailer', sanitize_text_field( $_POST['trailer'] ) );
+    }
+
 }
 add_action( 'save_post_movie', 'mdb_save_meta_boxes', 10, 2 );
