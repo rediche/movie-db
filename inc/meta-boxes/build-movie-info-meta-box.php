@@ -61,7 +61,7 @@ function mdb_build_meta_box( $post ) {
         <div class="mdb-inside">
             <label>
                 <p><?php _e( 'Duration', 'mdb' ); ?></p>
-                <input type="text" name="duration" value="<?php echo $current_duration; ?>" />
+                <input type="text" placeholder="<?php _e( 'In minutes', 'mdb' ); ?>" name="duration" value="<?php echo $current_duration; ?>" />
             </label>
         </div>
         <div class="mdb-inside">
