@@ -16,7 +16,11 @@ function mdb_init_series_tax() {
 
     $args = array(
         'labels' => $labels,
-        'hierarchical' => false
+        'hierarchical' => false,
+        'rewrite' => array (
+            'slug' => 'serier',
+            'with_front' => false
+        )
     );
     register_taxonomy( 'series', 'movie', $args );
 }
