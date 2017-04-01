@@ -129,8 +129,8 @@ function mdb_build_meta_box( $post ) {
             <label>
                 <p><?php _e( 'Subtitles', 'mdb' ); ?></p>
                 <select name="subtitles">
-                    <option value="yes" <?php ("yes" == $current_subtitles ? ' selected' : ''); ?>>Yes</option>
-                    <option value="no" <?php ("no" == $current_subtitles ? ' selected' : ''); ?>>No</option>
+                    <option value="yes" <?php echo ("yes" == $current_subtitles ? ' selected' : ''); ?>>Yes</option>
+                    <option value="no" <?php echo ("no" == $current_subtitles ? ' selected' : ''); ?>>No</option>
                 </select>
             </label>
         </div>
