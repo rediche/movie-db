@@ -16,7 +16,7 @@ function mdb_build_mood_meta_box( $post ) {
     $current_look           = get_post_meta( $post->ID, '_mood_look', true );
     $current_foodforthought = get_post_meta( $post->ID, '_mood_foodforthought', true );
     ?>
-    <div class="mdb-flex column">
+    <div class="mdb-flex">
         <div class="mdb-inside">
             <label>
                 <p><?php _e( 'Tempo', 'mdb' ); ?></p>

@@ -14,7 +14,7 @@ function mdb_add_mood_meta_boxes( $post ) {
         __( 'Mood Info', 'mdb' ), 
         'mdb_build_mood_meta_box', 
         'movie',
-        'side',
+        'normal',
         'low'
     );
 }
