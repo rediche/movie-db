@@ -122,7 +122,8 @@ function mdb_build_meta_box( $post ) {
         <div class="mdb-inside">
             <label>
                 <p><?php _e( 'Language', 'mdb' ); ?></p>
-                <input type="text" name="version" value="<?php echo $current_version; ?>" />
+                <p><?php echo $current_version; ?></p>
+                <!--<input type="text" name="version" value="<?php echo $current_version; ?>" />-->
             </label>
         </div>
         <div class="mdb-inside">
