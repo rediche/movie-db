@@ -30,6 +30,9 @@ require_once('inc/taxonomies/create-genre-taxonomy.php');
 // Add Taxonomy: Language (Tag)
 require_once('inc/taxonomies/create-language-taxonomy.php');
 
+// Add Taxonomy: Venue (Tag)
+require_once('inc/taxonomies/create-venue-taxonomy.php');
+
 // Add Taxonomy: Festival (Category)
 require_once('inc/taxonomies/create-festival-taxonomy.php');
 
